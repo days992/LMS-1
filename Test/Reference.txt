@@ -1,3 +1,0 @@
-https://www.edureka.co/blog/node-js-mysql-tutorial/
-https://www.geeksforgeeks.org/javascript-fetch-method/
-https://www.section.io/engineering-education/how-to-use-cors-in-nodejs-with-express/

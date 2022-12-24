@@ -1,5 +1,7 @@
+import { ipa } from './main.js';
+    let val= ipa();
+    
 function updateDetails(){
-
     var formElement=document.getElementById("home-form");
 
     var user_idV=document.getElementById("user_id").value;
@@ -27,7 +29,7 @@ function updateDetails(){
     body : JSON.stringify(update)
     }
 
-    let fetchUp=fetch("http://localhost:8080/lmsl",optionUp);
+    let fetchUp=fetch("${val}:8080/lmsl",optionUp);
     fetchUp.then(res =>res.json()).then(u => {
         console.log(u)
     })

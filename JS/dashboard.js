@@ -1,3 +1,6 @@
+import { ipa } from './main.js';
+    let val= ipa();
+
 function orderDetails(){
 
     var reqform=document.getElementById("req-form");
@@ -32,7 +35,7 @@ function orderDetails(){
         },
         body : JSON.stringify(order)
         }
-    let fetchOrder=fetch("http://localhost:8080/lmso",optionOr);
+    let fetchOrder=fetch("${val}:8080/lmso",optionOr);
     fetchOrder.then(res =>res.json()).then(o => {
         console.log(o)
     })

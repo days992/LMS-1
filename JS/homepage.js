@@ -1,3 +1,6 @@
+import { ipa } from './main.js';
+    let val= ipa();
+
 function sendDetails(){
     var formElement=document.getElementById("home-form");
     var uid=document.getElementById("uid").value;
@@ -25,7 +28,7 @@ function sendDetails(){
         body : JSON.stringify(user)
     }
 
-    let fetchRes=fetch("http://localhost:8080/lmsl",option);
+    let fetchRes=fetch("${val}:8080/lmsl",option);
     fetchRes.then(res =>res.json()).then(d => {
         console.log(d)
     })
