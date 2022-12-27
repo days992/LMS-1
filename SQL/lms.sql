@@ -1,7 +1,7 @@
 create schema LMS;
 
 create table user_details(user_id int(15) not null auto_increment , username varchar(40) not null, 
-email varchar(40) not null, contact int(10) not null, pwd varchar(20) not null,
+email varchar(40) not null, contact int not null, pwd varchar(20) not null,
 address varchar(70) not null, pincode int(6) not null, primary key(user_id));
 
 create table req(user_id int not null auto_increment, pdate date, ddate date,
